@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'inter';
+  src: url('/static/Inter_24pt-SemiBold.ttf');
+  font-display: swap;
+}
+
+@theme{
+    --font-worksans: "inter", sans-serif;
+    --color-greys: #9A9EA7;
+    --color-black1: #0D0A19;
+    --color-primary: #7963F0;
+    --color-border1: #E4E6E8;
+    
+}
+
+@layer base {
+  body {
+    @apply font-worksans bg-white overflow-x-hidden ;
+    
+  }
+}
+@layer utilities{
+ .container1{
+    @apply w-[1140px] mx-auto;
+}
+}
